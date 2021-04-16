@@ -1,0 +1,481 @@
+*{
+   box-sizing: border-box;
+}
+
+/* ################################################################################################################################################## */
+
+/* Background del body */
+
+body{
+   background-color:#154360;
+}
+
+/* ################################################################################################################################################## */
+
+main{
+   background-color: #154360;
+   margin: auto;
+}
+
+.main{
+   background-color: #154360;
+   margin: auto;
+}
+
+/* ################################################################################################################################################## */
+
+/* Index.html home page */
+
+
+.welcome h1{
+   font-family: fantasy;
+   font-size: 3em;
+   color: white;
+   text-align: center;
+ }
+ 
+ .welcome p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+   color: white;
+   text-align: justify;
+   line-height: 2em;
+   height: 4px;
+   max-width: auto;
+   margin: 40px;
+   padding: 5px;
+
+ }
+
+ .introduccion img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/* ################################################################################################################################################## */
+
+/* Barra de navegación */
+
+.navbar{
+ top: 0;
+}
+
+.nav ul{
+   list-style-type: none;
+   background-color:#154360;
+   overflow: hidden;
+}
+
+.nav li{
+   float: left;
+}
+
+.nav li a{
+   display: block;
+   color: white;
+   text-align: center;
+   font-family: fantasy;
+   font-size: 1.2em;
+}
+.nav a{
+   padding: 5px;
+   max-width: 100%;
+   margin-left: 50px;
+   padding-left: 10px;
+   text-decoration: none;
+}
+
+.nav a:hover{
+   color: #E91E63;
+}
+
+.nav-left{
+   padding-left: 150px;
+}
+
+/* ################################################################################################################################################## */
+
+.nombre{
+   padding-right: 100px;
+}
+
+.nombre a:hover{
+   color: #E91E63;
+}
+
+/* ################################################################################################################################################## */
+/* contacto */
+
+/* ################################################################################################################################################## */
+
+.footer{
+   display: block;
+   color: #E65100;
+   font-family: fantasy;
+   font-size: 0.7em;
+   text-align: center;
+   padding: 30px;
+}
+
+.footer span{
+   padding-left: 100px;
+}
+
+.agrad{
+   display: block;
+   color: #E65100;
+   font-family: fantasy;
+   font-size: 0.7em;
+   text-align: center;
+   padding: 2px;
+}
+
+/* ################################################################################################################################################## */
+
+/* Projects.html */
+
+.projects{
+   font-family: fantasy;
+}
+
+/* ################################################################################################################################################## */
+
+/* about.html (CV) */
+
+table{
+   max-width: auto;
+   margin: auto;
+   padding: auto;
+}
+
+.cv thead{
+   text-align: center;
+}
+
+.cv th{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.2em;
+   color: whitesmoke;
+}
+
+.cv tbody{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 0.9em;
+   color: whitesmoke;
+   text-align: justify;
+   line-height: 1em;
+}
+
+.cv a{
+   color: whitesmoke;
+   text-decoration: none;
+}
+
+.cv a:hover{
+   color: #E91E63;
+}
+
+.researcher{
+   text-align: center;
+   font-size: 1em;
+}
+
+#cv_logo img{
+   margin: 1px 10px 5px 10px;
+   padding-right: auto;
+}
+
+/* ################################################################################################################################################## */
+
+.Bio{
+   max-width: auto;
+   margin: 40px;
+   padding: 5px;
+}
+
+.Bio h2{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.3em;
+   text-align: center;
+   line-height: 2em;
+   color: teal;
+}
+
+.Bio p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+   text-align: justify;
+   line-height: 2em;
+   color: whitesmoke;
+}
+
+.Bio a{
+   color: whitesmoke;
+   text-decoration: underline;
+}
+
+.Bio a:hover{
+   color: #E91E63;
+}
+
+.Bio ul{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+   text-align: justify;
+   line-height: 2em;
+   color: whitesmoke;
+}
+/* ################################################################################################################################################## */
+
+.knowledge{
+   max-width: auto;
+   margin: 30px;
+   padding: 2px;
+}
+
+.knowledge strong{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.3em;
+   text-align: center;
+   line-height: 2em;
+   color: teal;
+}
+
+.knowledge i{
+   color: #E91E63;
+}
+
+.knowledge p{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+   text-align: justify;
+   line-height: 2em;
+   color: whitesmoke;
+}
+
+.knowledge li{
+   color: white;
+   text-align: justify;
+   line-height: 2em;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+
+}
+
+.knowledge a{
+   color: whitesmoke;
+   text-decoration: none;
+}
+
+
+.knowledge a:hover{
+   color: #E91E63;
+}
+
+.knowledge i{
+   color: #E91E63;
+}
+/* ################################################################################################################################################## */
+
+/* recsearch.html (Research work) */
+
+.projects{
+   max-width: auto;
+   margin: 40px;
+   padding: 4px;
+}
+
+.projects h2{
+   color: teal;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.2em;
+   text-align: center;
+}
+
+.projects h3{
+   color: teal;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.1em;
+   text-align: justify;
+}
+
+.projects h4{
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 0.9em;
+   text-align: center;
+
+}
+
+.projects p{
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+   line-height: 2em;
+   text-align: justify;
+}
+
+.projects li{
+   color: white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+   text-align: justify;
+}
+
+.projects a{
+   color: white;
+   text-decoration: underline;
+}
+
+.projects a:hover{
+   color: #E91E63;
+}
+
+.projects td{
+   height: 50px;
+   width: 50px;
+}
+/* ################################################################################################################################################## */
+
+.research{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.research li{
+   color: #E91E63;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+   text-align: justify;
+}
+
+.research a{
+   color: white;
+   
+}
+
+.research a:hover{
+   color: #E91E63;
+}
+
+.communications strong{
+   color: teal;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1em;
+   line-height: 1.5em;
+   text-align: center;
+}
+
+.communications i{
+   color: #E91E63;
+}
+
+.communications a{
+   color: teal;
+}
+
+.communications a:hover{
+   color: #E91E63;
+}
+
+/* ################################################################################################################################################## */
+
+/* Portfolio styles */
+.portfolio{
+    height: 250px;
+    width: 100%;
+    align-items: center;
+}
+
+.portfolio p{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 1em;
+      color: white;
+      text-align: justify;
+      line-height: 2em;
+      margin: 4px;
+      height: 4px;
+}
+
+.portfolio table{
+   max-width: auto;
+   margin: auto;
+   padding: auto;
+}
+
+.portfolio h4{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.2em;
+   color: #E91E63;
+   text-align: center;
+}
+
+.portfolio tbody{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 0.9em;
+   color: whitesmoke;
+   text-align: justify;
+   line-height: 1em;
+}
+
+.portfolio h2{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.3em;
+   text-align: center;
+   line-height: 2em;
+   color: teal;
+}
+
+/* ################################################################################################################################################## */
+
+/* Portfolio styles */
+
+.research-items-wrapper{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.research-item-wrapper{
+   position: relative;
+}
+
+ /*.research-item-wrapper:hover{
+
+} */
+
+.research-img-background{
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.research-text-wrapper{
+   position: absolute;
+   top: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   text-align: center;
+   padding-left: 100px;
+   padding-right: 100px;
+}
+
+.research-text-wrapper a{
+   text-decoration: none;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 1.3em;
+   color: white;
+}
+
+.research-text-wrapper a:hover{
+   color: #E91E63;
+}
+/* ################################################################################################################################################## */
+
