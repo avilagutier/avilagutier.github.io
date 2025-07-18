@@ -6,93 +6,147 @@
 
 /* Background del body */
 
-body{
-   background-color:#154360;
+body {
+  background-color: #102542; /* Professional dark blue */
+  color: #f5f7f9;            /* Light text for readability */
+}
+
+main {
+  background-color: #1b2a41; /* Slightly lighter blue for content */
+  margin: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 32px 0;
+  max-width: 900px;
 }
 
 /* ################################################################################################################################################## */
 
-main{
-   background-color: #154360;
-   margin: auto;
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.main{
-   background-color: #154360;
-   margin: auto;
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+footer {
+  width: 100%;
+  color: #f5f7f9;
+  text-align: center;
+  padding: 2px 0;
+  margin-top: auto;
 }
 
 /* ################################################################################################################################################## */
 
 /* Index.html home page */
 
+.cover-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 80px 0;
+}
 
-.welcome h1{
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 3em;
-   color: black;
-   text-align: center;
- }
- 
- .welcome p{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-   color: white;
-   text-align: justify;
-   line-height: 2em;
-   height: 4px;
-   max-width: auto;
-   margin: 40px;
-   padding: 5px;
+.cover-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background: #f5f7f9;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
 
- }
+.cover-left h2 {
+  font-size: 1.5em;
+  color: teal;
+  margin: 10px 0 0 0;
+  text-align: center;
+}
 
- .introduccion img{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
+.cover-left p {
+  font-size: 1em;
+  color: #333;
+  text-align: center;
+  margin: 4px 0;
+}
+
+.cover-left .researcher {
+  color: #E91E63;
+  font-weight: bold;
+}
+
+.cover-left a {
+  color: #154360;
+  text-decoration: none;
+}
+
+.cover-left a:hover {
+  color: #E91E63;
+  text-decoration: underline;
+}
+
+.cover-social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.cover-social img {
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.cover-social img:hover {
+  transform: scale(1.1);
 }
 
 /* ################################################################################################################################################## */
 
 /* Barra de navegación */
 
-.navbar{
- top: 0;
+.nav ul {
+  display: flex;
+  justify-content: center;   /* Center the navigation items */
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: transparent; /* Remove blue background */
 }
 
-.nav ul{
-   list-style-type: none;
-   background-color:#154360;
-   overflow: hidden;
+.nav li {
+  margin: 0 18px; /* Add horizontal spacing */
 }
 
-.nav li{
-   float: left;
+.nav a {
+  color: #154360; /* Use your accent color */
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  font-family: Palatino Linotype, 'Book Antiqua', Palatino, serif;
+  font-size: 1em;
 }
 
-.nav li a{
-   display: block;
-   color: white;
-   text-align: center;
-   font-family: fantasy;
-   font-size: 1.2em;
-}
-.nav a{
-   padding: 5px;
-   max-width: 100%;
-   margin-left: 50px;
-   padding-left: 10px;
-   text-decoration: none;
-}
-
-.nav a:hover{
-   color: #E91E63;
-}
-
-.nav-left{
-   padding-left: 150px;
-}
+.nav a:hover,
+.nav a.active {
+  background-color: #E91E63;
+  color: #fff;
 
 /* ################################################################################################################################################## */
 
@@ -112,8 +166,8 @@ main{
 .footer{
    display: block;
    color: #E65100;
-   font-family: fantasy;
-   font-size: 0.7em;
+   font-family: Palatino Linotype, 'Book Antiqua', Palatino, serif;
+   font-size: 0.9em;
    text-align: center;
    padding: 30px;
 }
