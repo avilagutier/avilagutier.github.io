@@ -46,6 +46,12 @@ footer {
   margin-top: auto;
 }
 
+.footer p {
+  margin: 0;
+  font-size: 0.5em;
+  color: #E65100; /* Accent color for footer text */
+}
+
 /* ################################################################################################################################################## */
 
 /* Index.html home page */
