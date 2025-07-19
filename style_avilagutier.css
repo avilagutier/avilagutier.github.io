@@ -20,8 +20,6 @@ main {
   max-width: 900px;
 }
 
-/* ################################################################################################################################################## */
-
 html, body {
   height: 100%;
   margin: 0;
@@ -66,12 +64,22 @@ footer {
 .cover-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* This centers all childen horizontally */
   gap: 10px;
   background: #f5f7f9;
   padding: 30px 40px;
   border-radius: 12px;
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.cover-left img {
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;      /* Ensures the image fills the square without distortion */
+  border-radius: 16px;    /* Slightly rounded corners for a modern look */
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10); /* Optional: subtle shadow */
 }
 
 .cover-left h2 {
@@ -195,9 +203,59 @@ footer {
 
 /* Projects.html */
 
-.projects{
-   font-family: fantasy;
+// ...existing code...
+.research-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #1b2a41;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  color: #f5f7f9;
 }
+
+.research-section {
+  margin-bottom: 48px;
+}
+
+.research-section h2 {
+  color: #E91E63;
+  margin-top: 0;
+}
+
+.research-section h3 {
+  color: #f5f7f9;
+  margin-bottom: 8px;
+}
+
+.research-section h4 {
+  color: #7fc7ae;
+  margin-bottom: 16px;
+}
+
+.img-caption {
+  font-size: 0.9em;
+  color: #b0bec5;
+  text-align: center;
+  margin-top: 4px;
+}
+
+.research-img {
+  text-align: center;
+  margin: 24px 0;
+}
+
+ul, ol {
+  margin-left: 24px;
+  margin-bottom: 16px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #2c3e50;
+  margin: 32px 0;
+}
+// ...existing code...
 
 /* ################################################################################################################################################## */
 
@@ -442,50 +500,53 @@ table{
 
 /* ################################################################################################################################################## */
 
-/* Portfolio styles */
-.portfolio{
-    height: 250px;
-    width: 100%;
-    align-items: center;
+/* Outreach styles */
+// Add to style_avilagutier.css
+
+.outreach-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #1b2a41;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  color: #f5f7f9;
 }
 
-.portfolio p{
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 1em;
-      color: white;
-      text-align: justify;
-      line-height: 2em;
-      margin: 4px;
-      height: 4px;
+.outreach-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 32px;
 }
 
-.portfolio table{
-   max-width: auto;
-   margin: auto;
-   padding: auto;
+.outreach-box {
+  background: #154360;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 24px;
+  width: 260px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
 }
 
-.portfolio h4{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.2em;
-   color: #E91E63;
-   text-align: center;
+.outreach-box:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
+  background: #1b2a41;
 }
 
-.portfolio tbody{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 0.9em;
-   color: whitesmoke;
-   text-align: justify;
-   line-height: 1em;
+.outreach-box h2 {
+  margin: 0 0 12px 0;
+  color: #E91E63;
+  font-size: 1.2em;
 }
 
-.portfolio h2{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.3em;
-   text-align: center;
-   line-height: 2em;
-   color: teal;
+.outreach-box p {
+  color: #f5f7f9;
+  font-size: 1em;
 }
 
 /* ################################################################################################################################################## */

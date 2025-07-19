@@ -3,30 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_avilagutier.css" type="text/css">
-    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="style_avilagutier.css">
+    <title>Outreach | Mario Avila</title>
 </head>
 <body>
-    <main> <!-- Barra de navegación -->
-        <header class="navbar">
-            <div class="nav">
-                <nav>
-                     <ul> 
-                         <li> <span class="nombre"><a href="index.html">Mario Avila</a></span></li> <!-- En span para que se quede hasta la izquierda, nivelado con la barra de navegación -->
-                        <li class="nav-left"><a href="research.html">Research</a></li>
-                        <li class="nav-left"><a href="publications.html">Publications</a></li>
-                        <li class="nav-left"><a href="projects.html">CV</a></li>
-                        <li class="nav-left"><a href="outreach.html">Outreach</a></li>
-                    </ul>
-                </nav>
-         </div>
-        </header>
-                <footer>
-                    <div class="footer">
-                        <p> Design & Web development : Mario Avila Ph.D. <span> Messina, Italia </span> <span>2024</span> </p>
-                        <p class="agrad"> https://www.avilagutier.github.io </p>
-                    </div>
-                </footer>
-    </main>  
+  <div class="page-wrapper">
+    <header class="navbar">
+      <nav class="nav">
+        <ul>
+          <li><span class="nombre"><a href="index.html">Mario Avila</a></span></li>
+          <li class="nav-left"><a href="research.html">Research</a></li>
+          <li class="nav-left"><a href="publications.html">Publications</a></li>
+          <li class="nav-left"><a href="projects.html">CV</a></li>
+          <li class="nav-left"><a href="outreach.html">Outreach</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="outreach-container">
+        <h1>Outreach & Skills</h1>
+        <div class="outreach-boxes">
+          <div class="outreach-box" onclick="window.open('webdev_experience.html', '_blank')">
+            <h2>Web Development Experience</h2>
+            <p>Design, development, and deployment of scientific and personal websites.</p>
+          </div>
+          <div class="outreach-box" onclick="window.open('research_internships.html', '_blank')">
+            <h2>Research Internships</h2>
+            <p>International and national research stays in advanced laboratories.</p>
+          </div>
+          <div class="outreach-box" onclick="window.open('experiences_out_research.html', '_blank')">
+            <h2>Experiences Outside Research</h2>
+            <p>Teaching, outreach, and science communication activities.</p>
+          </div>
+          <div class="outreach-box" onclick="window.open('data_skills.html', '_blank')">
+            <h2>Data Skills</h2>
+            <p>Data analysis, visualization, and programming for scientific research.</p>
+          </div>
+          <div class="outreach-box" onclick="window.open('characterization_skills.html', '_blank')">
+            <h2>Characterization Techniques Skills</h2>
+            <p>Expertise in advanced material characterization methods.</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <p>Design & Web development : Mario Avila Ph.D. <span>Messina, Italia</span> <span>2024</span></p>
+        <p class="agrad">https://www.avilagutier.github.io</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
