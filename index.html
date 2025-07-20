@@ -40,9 +40,11 @@
             <a href="https://orcid.org/my-orcid?orcid=0000-0002-9972-3721" target="_blank">ORCID</a>
           </div>
           <div>
-            <p>Background in physical chemistry of Materials Science, experience in synthesis of (nano)materials (colloidal, solid-state), magnetic materials, photoluminescent materials and electrochemistry. Trained to use different characterization techniques: TEM, SEM, GISAXS, Raman, TGA, DSC, UV-Vis, FTIR, Fluorescence, etc. 
-Management experience, analytical skills, problem solving and mentoring of students. Oral and written communication skills with scientific and non-scientific audiences. Work experience in different languages, used to work in multi-cultural team. Ability and flexibility to new and different work environments. 
-Also interese in data science using: Python, R, Julia, and several softwares for data science (OriginLab, SigmaPlot, Excel)</p>
+            <p class="cover-summary">
+              Background in physical chemistry of Materials Science, experience in synthesis of (nano)materials (colloidal, solid-state), magnetic materials, photoluminescent materials and electrochemistry. Trained to use different characterization techniques: TEM, SEM, GISAXS, Raman, TGA, DSC, UV-Vis, FTIR, Fluorescence, etc. 
+              Management experience, analytical skills, problem solving and mentoring of students. Oral and written communication skills with scientific and non-scientific audiences. Work experience in different languages, used to work in multi-cultural team. Ability and flexibility to new and different work environments. 
+              Also interese in data science using: Python, R, Julia, and several softwares for data science (OriginLab, SigmaPlot, Excel)
+            </p>
           </div>
         </div>
       </div>
@@ -56,3 +58,17 @@ Also interese in data science using: Python, R, Julia, and several softwares for
   </div>
 </body>
 </html>
+<script>
+document.querySelectorAll('.cover-social a').forEach(link => {
+  link.addEventListener('mouseenter', function() {
+    const tip = document.createElement('span');
+    tip.textContent = link.textContent;
+    tip.className = 'tooltip';
+    link.appendChild(tip);
+  });
+  link.addEventListener('mouseleave', function() {
+    const tip = link.querySelector('.tooltip');
+    if (tip) link.removeChild(tip);
+  });
+});
+</script>

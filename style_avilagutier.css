@@ -55,10 +55,14 @@ footer {
 /* Index.html home page */
 
 .cover-container {
+   width: 100%;
+   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  margin: 80px 0;
+  background: #1b2a41; /* Dark background for the cover section */
+  padding: 48px 0;
+  box-sizing: border-box;
 }
 
 .cover-left {
@@ -96,6 +100,16 @@ footer {
   margin: 4px 0;
 }
 
+.cover-summary {
+  font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 1em;
+  color: #154360;
+  margin-top: 18px;
+  margin-bottom: 0;
+  line-height: 1.6;
+  text-align: justify; /* Ensures the text is justified */
+}
+
 .cover-left .researcher {
   color: #E91E63;
   font-weight: bold;
@@ -127,6 +141,19 @@ footer {
 .cover-social img:hover {
   transform: scale(1.1);
 }
+/* ################################################################################################################################################## */
+.tooltip {
+  position: absolute;
+  background: #154360;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.9em;
+  top: 28px;
+  left: 0;
+  z-index: 10;
+}
+
 
 /* ################################################################################################################################################## */
 
@@ -164,13 +191,6 @@ footer {
 
 /* ################################################################################################################################################## */
 
-.nombre{
-   padding-right: 100px;
-}
-
-.nombre a:hover{
-   color: #E91E63;
-}
 
 /* ################################################################################################################################################## */
 /* contacto */
@@ -203,7 +223,6 @@ footer {
 
 /* Projects.html */
 
-// ...existing code...
 .research-container {
   max-width: 900px;
   margin: 0 auto;
@@ -306,204 +325,55 @@ table{
 
 /* ################################################################################################################################################## */
 
-.Bio{
-   max-width: auto;
-   margin: 40px;
-   padding: 5px;
-}
-
-.Bio h2{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.3em;
-   text-align: center;
-   line-height: 2em;
-   color: teal;
-}
-
-.Bio p{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-   text-align: justify;
-   line-height: 2em;
-   color: whitesmoke;
-}
-
-.Bio a{
-   color: whitesmoke;
-   text-decoration: underline;
-}
-
-.Bio a:hover{
-   color: #E91E63;
-}
-
-.Bio ul{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-   text-align: justify;
-   line-height: 2em;
-   color: whitesmoke;
-}
-/* ################################################################################################################################################## */
-
-.knowledge{
-   max-width: auto;
-   margin: 30px;
-   padding: 2px;
-}
-
-.knowledge strong{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.3em;
-   text-align: center;
-   line-height: 2em;
-   color: teal;
-}
-
-.knowledge i{
-   color: #E91E63;
-}
-
-.knowledge p{
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-   text-align: justify;
-   line-height: 2em;
-   color: whitesmoke;
-}
-
-.knowledge li{
-   color: white;
-   text-align: justify;
-   line-height: 2em;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-
-}
-
-.knowledge a{
-   color: whitesmoke;
-   text-decoration: none;
-}
-
-
-.knowledge a:hover{
-   color: #E91E63;
-}
-
-.knowledge i{
-   color: #E91E63;
-}
-/* ################################################################################################################################################## */
-
-/* recsearch.html (Research work) */
-
-.projects{
-   max-width: auto;
-   margin: 40px;
-   padding: 4px;
-}
-
-.projects h2{
-   color: teal;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.2em;
-   text-align: center;
-}
-
-.projects h3{
-   color: teal;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.1em;
-   text-align: justify;
-}
-
-.projects h4{
-   color: white;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 0.9em;
-   text-align: center;
-
-}
-
-.projects p{
-   color: white;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-   line-height: 2em;
-   text-align: justify;
-}
-
-.projects li{
-   color: white;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-   text-align: justify;
-}
-
-.projects a{
-   color: white;
-   text-decoration: underline;
-}
-
-.projects a:hover{
-   color: #E91E63;
-}
-
-.projects td{
-   height: 50px;
-   width: 50px;
-}
-/* ################################################################################################################################################## */
-
-.research{
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-}
-
-.research li{
-   color: #E91E63;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-   text-align: justify;
-}
-
-.research a{
-   color: white;
-   
-}
-
-.research a:hover{
-   color: #E91E63;
-}
-
-.communications strong{
-   color: teal;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1em;
-   line-height: 1.5em;
-   text-align: center;
-}
-
-.communications i{
-   color: #E91E63;
-}
-
-.communications a{
-   color: teal;
-}
-
-.communications a:hover{
-   color: #E91E63;
-}
-
-/* ################################################################################################################################################## */
-
-/* Outreach styles */
 // Add to style_avilagutier.css
 
-.outreach-container {
+.research-cover-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.research-cover-item {
+  background: #1b2a41;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  padding: 16px;
+  text-align: center;
+}
+
+.research-cover-item img {
+  width: 100%;
+  max-width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+.cover-caption {
+  color: #E91E63;
+  font-size: 1em;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .research-cover-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .research-cover-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ################################################################################################################################################## */
+
+.cv-container {
   max-width: 900px;
   margin: 0 auto;
   padding: 32px;
@@ -513,90 +383,82 @@ table{
   color: #f5f7f9;
 }
 
-.outreach-boxes {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-  margin-top: 32px;
-}
-
-.outreach-box {
-  background: #154360;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
-  padding: 24px;
-  width: 260px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+.cv-header {
   text-align: center;
+  margin-bottom: 24px;
 }
 
-.outreach-box:hover {
-  transform: translateY(-4px) scale(1.04);
-  box-shadow: 0 6px 24px rgba(0,0,0,0.18);
-  background: #1b2a41;
-}
-
-.outreach-box h2 {
-  margin: 0 0 12px 0;
+.cv-header h1 {
+  margin-bottom: 8px;
   color: #E91E63;
+}
+
+.cv-title {
   font-size: 1.2em;
+  color: #7fc7ae;
+  margin-bottom: 4px;
 }
 
-.outreach-box p {
+.cv-section {
+  margin-bottom: 32px;
+}
+
+.cv-section h2 {
+  color: #7fc7ae;
+  margin-bottom: 12px;
+  border-bottom: 1px solid #2c3e50;
+  padding-bottom: 4px;
+}
+
+.cv-job {
+  margin-bottom: 24px;
+}
+
+.cv-job-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
   color: #f5f7f9;
+}
+
+.cv-job-title {
+  font-size: 1.1em;
+}
+
+.cv-job-date {
   font-size: 1em;
+  color: #b0bec5;
 }
 
-/* ################################################################################################################################################## */
-
-/* Portfolio styles */
-
-.research-items-wrapper{
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-
+.cv-job-place {
+  font-style: italic;
+  color: #b0bec5;
+  margin-bottom: 6px;
+  display: block;
 }
 
-.research-item-wrapper{
-   position: relative;
+.cv-job ul {
+  margin-left: 24px;
+  margin-bottom: 0;
 }
 
- /*.research-item-wrapper:hover{
-
-} */
-
-.research-img-background{
-    height: 250px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.cv-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
 }
 
-.research-text-wrapper{
-   position: absolute;
-   top: 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   height: 100%;
-   text-align: center;
-   padding-left: 100px;
-   padding-right: 100px;
+.cv-skills-grid h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #E91E63;
 }
 
-.research-text-wrapper a{
-   text-decoration: none;
-   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   font-size: 1.3em;
-   color: white;
+.cv-skills-grid ul {
+  margin-left: 18px;
+  margin-bottom: 0;
 }
 
-.research-text-wrapper a:hover{
-   color: #E91E63;
+.cv-skills-grid li {
+  margin-bottom: 6px;
 }
-/* ################################################################################################################################################## */
-
