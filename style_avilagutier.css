@@ -63,6 +63,54 @@ body {
   color: white;
 }
 
+/* Animación de Revelado */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Colores Modo Oscuro */
+body.dark-theme {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark-theme .cover-left, 
+body.dark-theme .cover-right,
+body.dark-theme .project-card,
+body.dark-theme .pub-item {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+body.dark-theme .nav-brand .nombre a,
+body.dark-theme .nav-links a {
+    color: #f1f5f9;
+}
+
+/* Botón flotante para el Modo Oscuro */
+#dark-mode-toggle {
+    cursor: pointer;
+    background: #154360;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    margin-left: 15px;
+}
+
+body.dark-theme #dark-mode-toggle {
+    background: #E91E63;
+}
+
 /* --- SECCIÓN PRINCIPAL (COVER) --- */
 .cover-container {
   display: flex;
@@ -85,7 +133,7 @@ body {
 .cover-right {
   flex: 1.5;
   line-height: 1.6;
-  text-align: justify;
+  text-align: left; /* Antes decía justify */
 }
 
 .profile-img {
