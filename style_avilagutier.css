@@ -149,20 +149,29 @@ body.dark-theme #dark-mode-toggle {
 .cover-social {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px; /* Espacio entre logos */
   margin: 20px 0;
 }
 
-.cover-social svg {
-  width: 24px;
-  height: 24px;
-  color: #154360;
-  transition: transform 0.2s, color 0.2s;
+.cover-social a {
+  color: #154360; /* Color azul institucional */
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.cover-social a:hover svg {
-  color: #E91E63;
-  transform: scale(1.2);
+.cover-social svg {
+  width: 28px; /* Tamaño del icono */
+  height: 28px;
+}
+
+/* Efecto al pasar el mouse */
+.cover-social a:hover {
+  color: #E91E63; /* Cambia al color rosa/acento */
+  transform: scale(1.2); /* Se agranda un poco */
+}
+
+/* En modo oscuro, los iconos deben ser claros */
+body.dark-theme .cover-social a {
+  color: #f1f5f9;
 }
 
 /* --- PROYECTOS (GRID & CARDS) --- */
