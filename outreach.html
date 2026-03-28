@@ -4,56 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style_avilagutier.css">
-  <title>Outreach & Skills | Mario Avila</title>
+  <title>Mario Avila | Outreach & Skills</title>
 </head>
 <body>
   <div class="page-wrapper">
     <header class="navbar">
       <nav class="nav">
-        <ul>
-          <li><span class="nombre"><a href="index.html">Mario Avila</a></span></li>
-          <li class="nav-left"><a href="research.html">Research</a></li>
-          <li class="nav-left"><a href="publications.html">Publications</a></li>
-          <li class="nav-left"><a href="projects.html">CV</a></li>
-          <li class="nav-left"><a href="outreach.html">Outreach</a></li>
+        <div class="nav-brand">
+          <span class="nombre"><a href="index.html">Mario Avila</a></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="outreach.html" class="active">Outreach</a></li>
         </ul>
       </nav>
     </header>
-    <hr class="section-separator">
-    <div class="outreach-boxes-container">
-      <h1 class="cv-title">Outreach & Skills</h1>
-      <div class="outreach-boxes-grid">
-        <div class="outreach-box" onclick="window.open('research_internships.html', '_blank')">
-          <h2>Research Internships</h2>
-          <p>International and national research stays in advanced laboratories.</p>
+
+    <div class="main-content">
+      <h1 class="section-title">Outreach & Skills</h1>
+
+      <section class="outreach-section">
+        <h2 class="sub-title">Committees & Academic Service</h2>
+        
+        <div class="pub-item">
+          <span class="pub-journal">Fulbright</span>
+          <p class="pub-text"><strong>Fulbright Project Evaluation Committee</strong> (2025)</p>
+          <p class="institution">Reviewer for international research grants and fellowships.</p>
         </div>
-        <div class="outreach-box" onclick="window.open('characterization_skills.html', '_blank')">
-          <h2>Characterization Skills</h2>
-          <p>Expertise in advanced material characterization methods.</p>
+
+        <div class="pub-item">
+          <span class="pub-journal">LatinXChem</span>
+          <p class="pub-text"><strong>LatinXChem Technical Committee</strong> (2021 - 2024)</p>
+          <p class="institution">Social Media Manager (Instagram) and Organizer for Analytical and Inorganic Chemistry sessions.</p>
+          <a href="https://www.latinxchem.org/" target="_blank" class="doi-link">Visit LatinXChem</a>
         </div>
-        <div class="outreach-box" onclick="window.open('webdev_skills.html', '_blank')">
-          <h2>Web Development Skills</h2>
-          <p>Design, development, and deployment of scientific and personal websites.</p>
+
+        <div class="pub-item">
+          <span class="pub-journal">CIUP Paris</span>
+          <p class="pub-text"><strong>President of the Residents' Committee</strong> - Colegio de España (2018 - 2019)</p>
+          <p class="institution">Cité Internationale Universitaire de Paris, France.</p>
         </div>
-        <div class="outreach-box" onclick="window.open('data_analysis_skills.html', '_blank')">
-          <h2>Data Analysis Skills</h2>
-          <p>Data analysis, visualization, and programming for scientific research.</p>
+
+        <div class="pub-item">
+          <span class="pub-journal">CIUP Paris</span>
+          <p class="pub-text"><strong>Member of the Residents' Committee</strong> - Fondation Danoise (2017 - 2018)</p>
+          <p class="institution">Cité Internationale Universitaire de Paris, France.</p>
         </div>
-        <div class="outreach-box" onclick="window.open('outside_research.html', '_blank')">
-          <h2>Outside Research</h2>
-          <p>Teaching, outreach, and science communication activities.</p>
+      </section>
+
+      <section class="outreach-section">
+        <h2 class="sub-title">Research Internships & Summer Schools</h2>
+        <div class="outreach-grid">
+          
+          <div class="project-card">
+            <div class="card-tag">Research Stay</div>
+            <h3>International Advanced Stays</h3>
+            <ul class="presentations-list" style="margin-top: 15px;">
+              <li>
+                <strong>Université Laval</strong>. Quebec, Canada (2013). <br>
+                Analysis of phosphates, sulfates, and nitrates in water samples from Lake Saint-Augustin.
+              </li>
+              <li>
+                <strong>CNR - ITAE</strong>. Messina, Italy (2012). <br>
+                Study on the Gas Diffusion Layer (GDL) in fuel cells.
+              </li>
+              <li>
+                <strong>Università degli Studi di Firenze</strong>. Florence, Italy (2011). <br>
+                Synthesis and characterization of cobalt-ferrite nanoparticles for hyperthermia characterization.
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="card-tag">Education</div>
+            <h3>Summer Schools</h3>
+            <ul class="presentations-list" style="margin-top: 15px;">
+              <li>
+                <strong>International Summer School "Physical and Chemical Principles in Materials Science"</strong>. Xi'an, China (2015). <br>
+                Co-organized by LCPMR and the Department of Materials Science and Engineering (Northwestern Polytechnical University).
+                <br>
+                <a href="https://lcpmr.cnrs.fr/content/summer-school-2015-xian" target="_blank" class="doi-link">View Event</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
-        <div class="outreach-box" onclick="window.open('hobbies.html', '_blank')">
-          <h2>Hobbies</h2>
-          <p>Personal interests and activities beyond science.</p>
-        </div>
+      </section>
+
+      <div class="grid-two-columns">
+        <section class="outreach-section">
+          <h2 class="sub-title">Data Analysis</h2>
+          <div class="skills-container">
+            <p class="skills-intro">Self-taught learner in:</p>
+            <div class="skills-grid">
+              <div class="skill-tag">Python (Pandas, Numpy, Matplotlib)</div>
+              <div class="skill-tag">R (Statistical Analysis)</div>
+              <div class="skill-tag">SQL (In progress)</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="outreach-section">
+          <h2 class="sub-title">Technical & Soft Skills</h2>
+        <div class="skills-container">
+            <p class="skills-intro">Self-taught learner in:</p>
+          <div class="skills-grid">
+            <div class="skill-tag">HTML5 & CSS3 (Certified)</div>
+            <div class="skill-tag">Scientific Web Design</div>
+          </div>
+        </div>  
+        </section>
       </div>
+
+      <section class="outreach-section">
+        <h2 class="sub-title">Characterization Expertise</h2>
+        <div class="skills-grid">
+          <div class="skill-tag">XRD</div>
+          <div class="skill-tag">FTIR, UV-Vis, Raman</div>
+          <div class="skill-tag">TEM & SEM</div>
+          <div class="skill-tag">TGA-DSC</div>
+          <div class="skill-tag">DVS, BET</div>
+          <div class="skill-tag">Electrochemistry</div>
+          <div class="skill-tag">Nanomaterial Synthesis</div>
+          <div class="skill-tag">Thermal Energy Materials</div>
+          <div class="skill-tag">Photochemistry</div>
+        </div>
+      </section>
+
+      <section class="outreach-section">
+        <h2 class="sub-title">Personal Interests</h2>
+        <div class="pub-item">
+          <p class="pub-text"><strong>Hiking & Nature</strong></p>
+          <p class="institution">Active hiker, participating in mountain excursions at least once a month during the last year.</p>
+        </div>
+      </section>
+
     </div>
+
     <footer>
-      <div class="footer">
-        <p>Design & Web development : Mario Avila Ph.D. <span>Messina, Italia</span> <span>2024</span></p>
-        <p class="agrad">https://www.avilagutier.github.io</p>
-      </div>
+      <p>Design & Web development : Mario Avila Ph.D. <span>Messina, Italia</span> <span>2024</span></p>
     </footer>
   </div>
 </body>
