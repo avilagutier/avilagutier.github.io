@@ -75,23 +75,31 @@ body {
     transform: translateY(0);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
 /* Colores Modo Oscuro */
-body.dark-theme {
+html.dark-theme body {
     background-color: #0f172a;
     color: #e2e8f0;
 }
 
-body.dark-theme .cover-left, 
-body.dark-theme .cover-right,
-body.dark-theme .project-card,
-body.dark-theme .pub-item {
+html.dark-theme .cover-left, 
+html.dark-theme .cover-right,
+html.dark-theme .project-card,
+html.dark-theme .pub-item {
     background-color: #1e293b;
     color: #f1f5f9;
     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-body.dark-theme .nav-brand .nombre a,
-body.dark-theme .nav-links a {
+html.dark-theme .nav-brand .nombre a,
+html.dark-theme .nav-links a {
     color: #f1f5f9;
 }
 
@@ -107,7 +115,7 @@ body.dark-theme .nav-links a {
     margin-left: 15px;
 }
 
-body.dark-theme #dark-mode-toggle {
+html.dark-theme #dark-mode-toggle {
     background: #E91E63;
 }
 
@@ -170,8 +178,62 @@ body.dark-theme #dark-mode-toggle {
 }
 
 /* En modo oscuro, los iconos deben ser claros */
-body.dark-theme .cover-social a {
+html.dark-theme .cover-social a {
   color: #f1f5f9;
+}
+
+html.dark-theme .section-title,
+html.dark-theme .sub-title,
+html.dark-theme .project-card h3 {
+  color: #f8fafc;
+}
+
+html.dark-theme .card-role {
+  color: #94a3b8;
+}
+
+html.dark-theme .project-desc,
+html.dark-theme .skills-intro {
+  color: #cbd5e1;
+}
+
+html.dark-theme .institution {
+  color: #94a3b8;
+  border-top-color: #334155;
+}
+
+html.dark-theme .doi-link,
+html.dark-theme .project-link-inline,
+html.dark-theme .cover-email a {
+  color: #E91E63;
+}
+
+html.dark-theme .doi-link:hover,
+html.dark-theme .project-link-inline:hover {
+  color: #f9a8d4;
+}
+
+html.dark-theme .project-card {
+  border-left-color: #64748b;
+}
+
+html.dark-theme .current-project {
+  background-color: #1e293b;
+  border-left-color: #E91E63;
+}
+
+html.dark-theme .pub-journal {
+  background: #334155;
+}
+
+html.dark-theme .skill-tag {
+  background: #334155;
+  color: #f1f5f9;
+  border-color: #475569;
+}
+
+html.dark-theme .presentations-list li {
+  border-bottom-color: #334155;
 }
 
 /* --- PROYECTOS (GRID & CARDS) --- */
@@ -219,9 +281,25 @@ body.dark-theme .cover-social a {
 }
 
 .project-card h3 {
-  margin: 0 0 10px 0;
+  margin: 0 0 6px 0;
   color: #154360;
   font-size: 1.2em;
+}
+
+.card-role {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #154360;
+  margin: 0 0 12px 0;
+}
+
+.project-card .skills-grid {
+  margin: 0 0 12px 0;
+}
+
+.project-card .skill-tag {
+  font-size: 0.75em;
+  padding: 5px 10px;
 }
 
 .project-desc {
