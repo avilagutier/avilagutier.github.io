@@ -1,57 +1,141 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // --- 1. EFECTO TYPEWRITER (ESCRITURA) ---
-    const researcherElement = document.querySelector('.researcher');
-    if (researcherElement) {
-        const text = researcherElement.textContent;
-        researcherElement.textContent = ''; // Limpiamos el texto original
-        let index = 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style_avilagutier.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var dark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark-theme');
+    })();
+  </script>
+  <title>Mario Avila | Publications</title>
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="navbar">
+      <nav class="nav">
+        <div class="nav-brand">
+          <span class="nombre"><a href="index.html">Mario Avila</a></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="research.html">Research</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+          <li><button type="button" id="dark-mode-toggle" aria-label="Switch to dark mode">🌙</button></li>
+        </ul>
+      </nav>
+    </header>
 
-        function typeEffect() {
-            if (index < text.length) {
-                researcherElement.textContent += text.charAt(index);
-                index++;
-                setTimeout(typeEffect, 80); // Velocidad de escritura
-            }
-        }
-        typeEffect();
-    }
+    <div class="main-content">
+      <h1 class="section-title">Publications & Communications</h1>
 
-    // --- 2. APARICIÓN SUAVE (SCROLL REVEAL) ---
-    const observerOptions = {
-        threshold: 0.1
-    };
+      <section class="pub-section">
+        <h2 class="sub-title">Peer-Reviewed Articles</h2>
+        
+        <div class="pub-item">
+          <span class="pub-journal">Energies</span>
+          <p class="pub-text"><strong>Lab-Scale Performance Evaluation of CaCl2/MgCl2/Silica Gel Sorbent Material for Thermal Energy Storage</strong></p>
+          <a href="https://www.mdpi.com/1996-1073/18/24/6527" target="_blank" class="doi-link">View Publication</a>
+        </div>
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            }
-        });
-    }, observerOptions);
+        <div class="pub-item">
+          <span class="pub-journal">Energies</span>
+          <p class="pub-text"><strong>Innovative Calcium L-Lactate/PDMS-Based Composite Foams as Core for Sandwich Materials for the Thermopassive Regulation of Buildings</strong></p>
+          <a href="https://www.mdpi.com/1996-1073/18/22/5940" target="_blank" class="doi-link">View Publication</a>
+        </div>
 
-    // Seleccionamos los contenedores principales para animarlos
-    document.querySelectorAll('.cover-left, .cover-right, .project-card, .pub-item').forEach(el => {
-        el.classList.add('reveal'); // Añadimos clase base
-        observer.observe(el);
-    });
+        <div class="pub-item">
+          <span class="pub-journal">Colloids and Surfaces A</span>
+          <p class="pub-text"><strong>Influence of the nanocrystallinity on exchange bias in Co/CoO core/shell nanoparticles</strong></p>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0927775723013651" target="_blank" class="doi-link">View Publication</a>
+        </div>
 
-    // --- 3. MODO OSCURO (DARK MODE) ---
-    const darkModeBtn = document.getElementById('dark-mode-toggle');
-    const currentTheme = localStorage.getItem('theme');
+        <div class="pub-item">
+          <span class="pub-journal">J. Mex. Chem. Soc</span>
+          <p class="pub-text"><strong>A Practical and Instructive Approach to Purify Acetonitrile for a Wide Electrochemical Window</strong></p>
+          <a href="https://www.scielo.org.mx/scielo.php?pid=S1870-249X2023000400393&script=sci_arttext" target="_blank" class="doi-link">View Publication</a>
+        </div>
 
-    // Revisar si ya existía una preferencia guardada
-    if (currentTheme === 'dark') {
-        document.body.classList.add('dark-theme');
-    }
+        <div class="pub-item">
+          <span class="pub-journal">Optical Materials</span>
+          <p class="pub-text"><strong>Vegetal melanin-induced radiative recombination centers in porous silicon</strong></p>
+          <a href="https://www.sciencedirect.com/science/article/abs/pii/S0925346723007541" target="_blank" class="doi-link">View Publication</a>
+        </div>
 
-    if (darkModeBtn) {
-        darkModeBtn.addEventListener('click', () => {
-            document.body.classList.toggle('dark-theme');
-            let theme = 'light';
-            if (document.body.classList.contains('dark-theme')) {
-                theme = 'dark';
-            }
-            localStorage.setItem('theme', theme); // Guardar preferencia
-        });
-    }
-});
+        <div class="pub-item">
+          <span class="pub-journal">Materials</span>
+          <p class="pub-text"><strong>Biodiesel Production Using Lithium Metasilicate Synthesized from Non-Conventional Sources</strong></p>
+          <a href="https://www.mdpi.com/1996-1944/15/19/6753" target="_blank" class="doi-link">View Publication</a>
+        </div>
+
+        <div class="pub-item">
+          <span class="pub-journal">Inorganic Chemistry</span>
+          <p class="pub-text"><strong>Synthesis of Ce2O2S and Gd2(1–y)Ce2yO2S Nanoparticles and Reactivity from in Situ X-ray Absorption Spectroscopy and X-ray Photoelectron Spectroscopy</strong></p>
+          <a href="https://pubs.acs.org/doi/abs/10.1021/acs.inorgchem.7b02336" target="_blank" class="doi-link">View Publication</a>
+        </div>
+      </section>
+
+      <section class="pub-section">
+        <h2 class="sub-title">Meeting Abstracts</h2>
+        <div class="pub-item abstract">
+          <p class="pub-text">Preliminary Electrochemical Analysis of Carbon Nanoparticles from Candle Soot (2024)</p>
+          <a href="https://iopscience.iop.org/article/10.1149/MA2024-01483068mtgabs/meta" target="_blank" class="doi-link">IOP Science</a>
+        </div>
+        <div class="pub-item abstract">
+          <p class="pub-text">Electrochemical Behavior of Carbon Nanoparticles (NPs) from Carbon Soot in Non-Aqueous Medium (2025)</p>
+          <a href="https://iopscience.iop.org/article/10.1149/MA2025-01502515mtgabs/meta" target="_blank" class="doi-link">IOP Science</a>
+        </div>
+      </section>
+
+      <div class="grid-two-columns">
+        <section class="pub-section">
+          <h2 class="sub-title">Book Chapters</h2>
+          <div class="pub-item small">
+            <p><strong>Surface Stabilization and Functionalities of Nanostructures</strong></p>
+            <p class="institution">Taylor & Francis (2021)</p>
+            <a href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003081944-2/surface-stabilization-andfunctionalities-nanostructures-cruz-leal-%C3%A1vila-guti%C3%A9rrez-coutino-gonzalez" target="_blank" class="doi-link">View Chapter</a>
+          </div>
+        </section>
+
+        <section class="pub-section">
+          <h2 class="sub-title">PhD Thesis</h2>
+          <div class="pub-item small">
+            <p><strong>Effet de la nanocristallinité sur les croissances homogènes et hétérogènes des supercristaux magnétique de cobalt</strong></p>
+            <p class="institution">Sorbonne Université (2020)</p>
+            <a href="https://theses.hal.science/tel-02935880/" target="_blank" class="doi-link">HAL Thesis</a>
+          </div>
+        </section>
+      </div>
+
+      <section class="pub-section">
+        <h2 class="sub-title">Oral Presentations</h2>
+        <ul class="presentations-list">
+          <li><strong>20th International Centre for Sustainable Development (SDEWES)</strong>. Dubrovnik, Croatia (2025)</li>
+          <li><strong>FEMS EUROMAT</strong>. Granada, Spain (2025)</li>
+          <li><strong>Congreso Nacional de la Sociedad Mexicana de Electroquímica</strong>. Culiacán, Mexico (2023)</li>
+          <li><strong>Congreso Internacional de la Sociedad Química de México </strong>. Mérida, Mexico (2022)</li>
+          <li><strong>International Conference on Polymers and Advanced Materials</strong>. Huatulco, Mexico (2022)</li>
+          <li><strong>International Materials Research Congress</strong>. Cancún, Mexico (2021, 2022)</li>
+        </ul>
+      </section>
+      <section class="pub-section">
+        <h2 class="sub-title">Poster Presentations</h2>
+        <ul class="presentations-list">
+          <li><strong>SolarPACES</strong>. Roma, Italy (2025)</li>
+          <li><strong>Colloid Conference</strong>. Sitges, Spain (2019)</li>
+        </ul>
+
+      </section>
+
+    </div>
+
+    <footer>
+      <p>Design & Web development : Mario Avila Ph.D. <span>Messina, Italia</span> <span>2026</span></p>
+    </footer>
+  </div>
+<script src="script_avilagutier.js"></script>
+</body>
+</html>
