@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style_avilagutier.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var dark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark-theme');
+    })();
+  </script>
   <title>Mario Avila | Outreach & Skills</title>
 </head>
 <body>
@@ -17,7 +24,7 @@
           <li><a href="research.html">Research</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="outreach.html">Outreach</a></li>
-          <li><button id="dark-mode-toggle">🌙</button></li> </ul>
+          <li><button type="button" id="dark-mode-toggle" aria-label="Switch to dark mode">🌙</button></li>
         </ul>
       </nav>
     </header>
@@ -30,8 +37,8 @@
         
         <div class="pub-item">
           <span class="pub-journal">Fulbright</span>
-          <p class="pub-text"><strong>Fulbright Project Evaluation Committee</strong> (2025)</p>
-          <p class="institution">Reviewer for international research grants and fellowships.</p>
+          <p class="pub-text"><strong>Fulbright Project Evaluation Committee</strong> (2025 - present)</p>
+          <p class="institution">Reviewer for international research grants and fellowships of Fulbright-COMEXUS candidates.</p>
         </div>
 
         <div class="pub-item">
@@ -99,9 +106,9 @@
           <div class="skills-container">
             <p class="skills-intro">Self-taught learner in:</p>
             <div class="skills-grid">
-              <div class="skill-tag">Python (Pandas, Numpy, Matplotlib)</div>
-              <div class="skill-tag">R (Statistical Analysis)</div>
-              <div class="skill-tag">SQL (In progress)</div>
+              <div class="skill-tag">Python (self-taught, in progress)</div>
+              <div class="skill-tag">Matlab (self-taught, in progress)</div>
+              <div class="skill-tag">SQL (self-taught, in progress)</div>
             </div>
           </div>
         </section>
@@ -122,10 +129,16 @@
         <h2 class="sub-title">Characterization Expertise</h2>
         <div class="skills-grid">
           <div class="skill-tag">XRD</div>
-          <div class="skill-tag">FTIR, UV-Vis, Raman</div>
-          <div class="skill-tag">TEM & SEM</div>
+          <div class="skill-tag">UV-Vis</div>
+          <div class="skill-tag">Raman</div>
+          <div class="skill-tag">FTIR</div>
+          <div class="skill-tag">TEM</div>
+          <div class="skill-tag">SEM</div>
           <div class="skill-tag">TGA-DSC</div>
-          <div class="skill-tag">DVS, BET</div>
+          <div class="skill-tag">DVS, SPS</div>
+          <div class="skill-tag">N<sub>2</sub> Adsorption-Desorption</div>
+          <div class="skill-tag">ICP-OES</div>
+          <div class="skill-tag">3D Optical Microscope</div>
           <div class="skill-tag">Electrochemistry</div>
           <div class="skill-tag">Nanomaterial Synthesis</div>
           <div class="skill-tag">Thermal Energy Materials</div>
