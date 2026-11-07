@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style_avilagutier.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var dark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark-theme');
+    })();
+  </script>
   <title>Mario Avila | Projects</title>
 </head>
 <body>
@@ -17,7 +24,7 @@
           <li><a href="research.html">Research</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="outreach.html">Outreach</a></li>
-          <li><button id="dark-mode-toggle">🌙</button></li> </ul>
+          <li><button type="button" id="dark-mode-toggle" aria-label="Switch to dark mode">🌙</button></li>
         </ul>
       </nav>
     </header>
@@ -28,43 +35,76 @@
   <div class="projects-grid">
     <div class="project-card current-project">
       <div class="card-tag">Current Project</div>
-      <h3>CharCool Project - Postdoc Researcher </h3>
-      <p class="project-desc">Biochar materials as nature-based solutions to achieve clean and efficient cooling.</p>
+      <h3>CharCool Project (Horizon Europe)</h3>
+      <p class="card-role">Thermal Energy Storage Researcher (Postdoc)</p>
+      <p class="project-desc">Biochar-based composite materials as a nature-based solution to achieve clean and efficient cooling.</p>
+      <div class="skills-grid">
+        <div class="skill-tag">Physico-chemical characterization</div>
+        <div class="skill-tag">Data analysis</div>
+        <div class="skill-tag">Thermochemical materials</div>
+        <div class="skill-tag">Biochar-based composites</div>
+        <div class="skill-tag">Mentoring</div>
+        <div class="skill-tag">Python &amp; MATLAB (self-taught)</div>
+      </div>
       <p class="institution">Università degli Studi di Messina, Italy</p>
-      <a href="https://www.linkedin.com/company/charcool-eu/about/" target="_blank" class="project-link-inline">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-      </a>
+      <a href="https://www.linkedin.com/company/charcool-eu/about/" target="_blank" rel="noopener noreferrer" class="project-link-inline" title="CharCool">CharCool</a>
     </div>
 
     <div class="project-card">
       <div class="card-tag">2024-2026</div>
-      <h3>GThEES Project - Postdoc Researcher</h3>
-      <p class="project-desc">Geopolymers Composites for Thermal Energy Storage.</p>
+      <h3>GThESS Project (NextGenerationEU)</h3>
+      <p class="card-role">Thermal Energy Storage Researcher (Postdoc)</p>
+      <p class="project-desc">Geopolymer composites for thermal energy storage.</p>
+      <div class="skills-grid">
+        <div class="skill-tag">Geopolymer concrete composites</div>
+        <div class="skill-tag">Data analysis</div>
+        <div class="skill-tag">Python &amp; MATLAB</div>
+      </div>
       <p class="institution">Università degli Studi di Messina, Italy</p>
-      <a href="https://www.linkedin.com/groups/15486034/" target="_blank" class="project-link-inline">
-        <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-      </a>
+      <a href="https://www.linkedin.com/groups/15486034/" target="_blank" rel="noopener noreferrer" class="project-link-inline" title="GThESS">GThESS</a>
     </div>
 
     <div class="project-card">
       <div class="card-tag">2022 - 2023</div>
-      <h3>Fulbright Researcher</h3>
-      <p class="project-desc">Study of Carbon Soot Particles. Electrochemical methods and characterization of carbon-based materials.</p>
+      <h3>Carbon Soot Particles (Fulbright – COMEXUS)</h3>
+      <p class="card-role">Electrochemical Researcher (Postdoc)</p>
+      <p class="project-desc">Electrochemical methods of carbon-based materials.</p>
+      <div class="skills-grid">
+        <div class="skill-tag">Electrochemistry</div>
+        <div class="skill-tag">Mentoring</div>
+        <div class="skill-tag">Data analysis</div>
+      </div>
       <p class="institution">University of Nevada, Reno, USA</p>
+      <a href="https://comexus.org.mx/" target="_blank" rel="noopener noreferrer" class="project-link-inline" title="COMEXUS">COMEXUS</a>
     </div>
 
     <div class="project-card">
       <div class="card-tag">2020 - 2022</div>
-      <h3>Postdoc Researcher CONACYT</h3>
+      <h3>Photoluminescent Zeolites (CONACYT)</h3>
+      <p class="card-role">Photoluminescent Researcher (Postdoc)</p>
       <p class="project-desc">Study of zeolites with photoluminescent properties.</p>
+      <div class="skills-grid">
+        <div class="skill-tag">Fluorescence</div>
+        <div class="skill-tag">XANES</div>
+        <div class="skill-tag">Data analysis</div>
+        <div class="skill-tag">Solid-state synthesis</div>
+      </div>
       <p class="institution">Centro de Investigaciones en Óptica, Mexico</p>
+      <a href="https://www.cio.mx/" target="_blank" rel="noopener noreferrer" class="project-link-inline" title="CIO">CIO</a>
     </div>
 
     <div class="project-card">
       <div class="card-tag">2016 - 2019</div>
-      <h3>PhD Researcher ANR Project</h3>
-      <p class="project-desc">Synthesis and assembly of magnetic nanomaterials into superstructures.</p>
+      <h3>Magnetic Nanomaterials (ANR Project)</h3>
+      <p class="card-role">Magnetic Nanomaterials Researcher (PhD)</p>
+      <p class="project-desc">Synthesis and self-assembly of supercrystals.</p>
+      <div class="skills-grid">
+        <div class="skill-tag">Materials characterization</div>
+        <div class="skill-tag">Data analysis</div>
+        <div class="skill-tag">Communication</div>
+      </div>
       <p class="institution">Sorbonne Université, France</p>
+      <a href="https://www.monaris.cnrs.fr/" target="_blank" rel="noopener noreferrer" class="project-link-inline" title="MONARIS">MONARIS</a>
     </div>
 
     <div class="project-card">
@@ -72,6 +112,7 @@
       <h3>Research Engineer</h3>
       <p class="project-desc">Design and fabrication of electrochromic materials.</p>
       <p class="institution">University of Liège, Belgium</p>
+      <a href="https://www.greenmat.uliege.be/cms/c_5107094/en/greenmat" target="_blank" rel="noopener noreferrer" class="project-link-inline" title="GreenMAT">GreenMAT</a>
     </div>
   </div>
 </div>
