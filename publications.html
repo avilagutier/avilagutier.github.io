@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style_avilagutier.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var dark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark-theme');
+    })();
+  </script>
   <title>Mario Avila | Publications</title>
 </head>
 <body>
@@ -17,7 +24,7 @@
           <li><a href="research.html">Research</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="outreach.html">Outreach</a></li>
-          <li><button id="dark-mode-toggle">🌙</button></li> </ul>
+          <li><button type="button" id="dark-mode-toggle" aria-label="Switch to dark mode">🌙</button></li>
         </ul>
       </nav>
     </header>
