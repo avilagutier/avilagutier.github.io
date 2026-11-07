@@ -4,6 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style_avilagutier.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var dark = saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark-theme');
+    })();
+  </script>
   <title>Mario Avila | Home</title>
 </head>
 <body>
@@ -17,7 +24,7 @@
           <li><a href="research.html">Research</a></li>
           <li><a href="publications.html">Publications</a></li>
           <li><a href="outreach.html">Outreach</a></li>
-          <li><button id="dark-mode-toggle">🌙</button></li> </ul>
+          <li><button type="button" id="dark-mode-toggle" aria-label="Switch to dark mode">🌙</button></li>
         </ul>
       </nav>
     </header>
@@ -56,27 +63,27 @@
           </div>
         </div>
 
-        <div class="cover-right reveal">
-        <div class="cover-presentation">
-          <p>
-            Thermal Energy Storage Researcher in the Department of Engineering at the University of Messina, I transform material science into scalable solutions for energy and 
-            environmental challenges.
-            <br>
-            My technical foundation spans Inorganic and Analytical Chemistry, Physical Chemistry of Materials, and composite development. I leverage advanced characterization techniques, sustainable chemistry, and data analytics to engineer high-performance (nano)materials for Thermal Energy Storage (TES).
-            <br>
-            Deeply interested in Deep Tech, material innovation, and sustainable technology, I focus on developing next-generation solutions aimed at reducing CO<sub>2</sub> emissions, improving energy efficiency, 
-            and accelerating the green transition
-            <br>
-          </p>
+        <div class="cover-right">
+          <div class="cover-presentation">
+            <p>
+              Thermal Energy Storage Researcher in the Department of Engineering at the University of Messina, I transform material science into scalable solutions for energy and 
+              environmental challenges.
+              <br>
+              My technical foundation spans Inorganic and Analytical Chemistry, Physical Chemistry of Materials, and composite development. I leverage advanced characterization techniques, sustainable chemistry, and data analytics to engineer high-performance (nano)materials for Thermal Energy Storage (TES).
+              <br>
+              Deeply interested in Deep Tech, material innovation, and sustainable technology, I focus on developing next-generation solutions aimed at reducing CO<sub>2</sub> emissions, improving energy efficiency, 
+              and accelerating the green transition.
+              <br>
+            </p>
+          </div>
         </div>
-      </div>
       
       </div>
     </div>
 
     <footer>
       <p>Design & Web development : Mario Avila Ph.D. <span>Messina, Italia</span> <span>2026</span></p>
-      <p class="agrad">https://www.avilagutier.github.io</p>
+      <p class="agrad">https://avilagutier.github.io</p>
     </footer>
   </div>
 <script src="script_avilagutier.js"></script>
